@@ -1,0 +1,193 @@
+@import './vars.css';
+@import './dashboard.css';
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--corFundo);
+  color: var(--corTexto);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+article{
+  flex: 1;
+}
+
+.container-md {
+  margin-top: 2rem;
+}
+
+/*==========================================Botao de deletar=============================================*/
+.custom-btn-delete {
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.6rem;
+  border: 1px solid;
+  border-radius: 3px;
+  color: red;
+  background-color: #fff;
+  transition: color 0.25s ease, background-color 0.25s ease;
+  &:hover {
+    background-color: #ff0000;
+    color: #ffffff;
+  }
+}
+/*=======================================================================================================*/
+.link-style a {  /* Este estilo foi criado apenas para resolver um pequeno bug visual que estava acontecendo na navbar devido a presença do form */
+  padding: 0.5rem;
+}
+
+.space-lg { /* Este estilo foi criado para ser usado como espaçador de conteudo */
+  margin-top: 6rem;
+}
+
+.custom-btn { /* Estilo padrão dos botões */ 
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.6rem;
+  border: 1px solid;
+  border-radius: 3px;
+  color: #c25002;
+  background-color: var(--corBotao);
+  transition: color 0.25s ease, background-color 0.25s ease;
+  &:hover {
+    background-color: var(--laranja);
+    color: var(--corBotao);
+  }
+}
+
+.custom-table { /* Estilo padrão de tabelas */
+  max-width: 760px;
+  min-width: 400px;
+  width: 100%;
+}
+.custom-table th,
+.custom-table tr { /* Estilo padrão das linhas da tabela */
+  text-align: center;
+  border: 1px solid;
+  padding: 0.5rem;
+}
+.custom-table tr:nth-child(even) { /* Estilizacão padrao para linhas pares */
+  background-color: #f5d5d5;
+}
+
+.custom-banner * { /* Estilização do Banner de Login */
+  color: var(--corSecondaria);
+  font-family: var(--fontPrincipal);
+  font-size: 4rem !important;
+}
+.custom-focus { /* Estilização para destaque de uma letra, palavra ou número */
+  color: var(--laranja);
+  font-size: inherit;
+}
+.custom-banner h2 { /* Estilo padrão do H2 presente no Banner */
+  width: 22ch;
+}
+
+.custom-login { /* Estilo do botão de login */
+  width: 19ch;
+  height: 85px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.custom-nav,
+.custom-foot { /* Estilos da navbar e footer do site */
+  color: var(--white);
+  background-color: var(--corSecondaria);
+  padding-block: 1.5rem;
+}
+.custom-foot { /* Estilo único do footer */
+  position: sticky;
+  bottom: 0px;
+  left: 0px;
+  /* Essa propriedade está sendo sobrescrita e vai ser removida em um futuro próximo */
+}
+
+.custom-bet-info{
+  border: 3px solid var(--laranja); 
+  padding: .375rem;
+}
+
+.custom-bet-info li{ /* Estilo das informações da Dashboard, este trecho é destinado ao histórico de apostas  */
+  padding-inline: 1.5rem;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--fontSecundaria);
+  color: var(--white);
+  font-size: 1.25rem;
+  border-inline: 3px solid var(--laranja);
+}
+
+.custom-informer{ /* Este dos titulos da parte da Dashboard  */
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--laranja);
+  margin-top: 1rem;
+}
+/*====================================================================================================*/
+
+.transaction-table { /* Estilo de informações da Dashboard, este trecho é destinado ao historico de depósitos */
+  margin-top: 3rem;
+  border: 1px solid;
+  border-radius: 10px;
+  table-layout: fixed;
+  max-width: 900px;
+  min-width: 700px;
+}
+.dash-data .chave { /* Estilização da tabela de transações da dashboard, oculta toda a chave que é gerada pelo fato de ocupar muito espaço */
+  width: 15ch;   
+  display: block;
+  overflow-x: hidden;
+  /* Criar um link para ver a chave completa */
+}
+
+.client-data .regra { /* Estilo da tabela de jogos,  */
+  width: 20ch;
+  height: 50px;
+  display: block;
+  overflow: hidden;
+}
+
+
+.form-control{
+  background-color: var(--corSecondaria);
+}
+
+.wrapper{
+  width: 90%;
+  transition: opacity .25s ease;
+}
+
+.form-control input,
+.form-control select,
+.form-control textarea{
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  background-color: #c39ad8a8;
+  color: var(--corFundo);
+  outline: none;
+  border: 2px solid var(--corFundo);
+  padding: .75rem;
+  font-family: var(--fontTitulo);
+  &::placeholder{
+      color: var(--corFundo);
+  }
+  &:focus{
+      background-color: #c39ad8be;
+  }
+}
+
+.form-label{
+  font-size: 1.5rem;
+}
+
+form input{
+  width: 100%;
+}

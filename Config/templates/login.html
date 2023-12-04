@@ -1,0 +1,21 @@
+{% extends 'main.html' %}
+{% block content %}
+{% for message in get_flashed_messages() %}
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+    {{message}}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{% endfor %}
+<h1>Login</h1>
+<div class="container-md">
+    <form method="post" class="form-control mt-3 bb-form" autocomplete="off">
+        {{form.hidden_tag()}}
+        {{form.email.label(class="form-label")}}
+        {{form.email(class="form-control", placeholder="seuemail@arbeit-ajax.com.br", autocomplete="off")}}
+        {{form.nome.label(class="form-label")}}
+        {{form.nome(class="form-control", placeholder="Seu nome")}}
+        {{form.enviar(class="bb-btn login mt-3")}}
+    </form>
+</div>
+<a href="{{url_for('cadastro')}}">Não possuo conta</a>
+{% endblock %}

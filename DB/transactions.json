@@ -1,0 +1,79 @@
+[
+    {
+        "id": "3",
+        "data": "16/11/2023 01:43:19",
+        "nome": "Luccas",
+        "username": "luccas",
+        "qrID": "10092427700",
+        "copia": "00020126360014BR.GOV.BCB.PIX0114+5579999508809520400005303986540220.005802BR5912Luccas Elias6008Campinas62120508BichoBet63049D1E",
+        "valor": "R$ 20,00",
+        "currStatus": "Pagamento pendente",
+        "saldo": "R$ 20,00"
+    },
+    {
+        "id": "3",
+        "data": "16/11/2023 02:46:13",
+        "nome": "Luccas",
+        "username": "luccas",
+        "qrID": "14648722136",
+        "copia": "00020126360014BR.GOV.BCB.PIX0114+5579999508809520400005303986540220.005802BR5912Luccas Elias6008Campinas62120508BichoBet63049D1E",
+        "valor": "R$ 20,00",
+        "currStatus": "Pagamento pendente",
+        "saldo": "R$ 18,50"
+    },
+    {
+        "id": "3",
+        "data": "16/11/2023 03:38:52",
+        "nome": "Luccas",
+        "username": "luccas",
+        "qrID": "4946624311",
+        "copia": "00020126360014BR.GOV.BCB.PIX0114+5579999508809520400005303986540220.005802BR5912Luccas Elias6008Campinas62120508BichoBet63049D1E",
+        "valor": "R$ 20,00",
+        "currStatus": "Pagamento pendente",
+        "saldo": "R$ 20,25"
+    },
+    {
+        "id": "3",
+        "data": "16/11/2023 15:01:08",
+        "nome": "Luccas",
+        "username": "luccas",
+        "qrID": "1796918231",
+        "copia": "00020126360014BR.GOV.BCB.PIX0114+5579999508809520400005303986540215.005802BR5912Luccas Elias6008Campinas62120508BichoBet63048891",
+        "valor": "R$ 15,00",
+        "currStatus": "Pagamento pendente",
+        "saldo": "R$ 20,20"
+    },
+    {
+        "id": "3",
+        "data": "16/11/2023 15:16:26",
+        "nome": "Luccas",
+        "username": "luccas",
+        "qrID": "246661852",
+        "copia": "00020126360014BR.GOV.BCB.PIX0114+5579999508809520400005303986540220.005802BR5912Luccas Elias6008Campinas62120508BichoBet63049D1E",
+        "valor": "R$ 20,00",
+        "currStatus": "Pagamento pendente",
+        "saldo": "R$ 28,28"
+    },
+    {
+        "id": "3",
+        "data": "16/11/2023 16:38:58",
+        "nome": "Luccas",
+        "username": "luccas",
+        "qrID": "10808032878",
+        "copia": "00020126360014BR.GOV.BCB.PIX0114+5579999508809520400005303986540250.005802BR5912Luccas Elias6008Campinas62120508BichoBet6304D7E7",
+        "valor": "R$ 50,00",
+        "currStatus": "Pagamento pendente",
+        "saldo": "R$ 50,63"
+    },
+    {
+        "id": "3",
+        "data": "16/11/2023 17:42:09",
+        "nome": "Luccas",
+        "username": "luccas",
+        "qrID": "4403953201",
+        "copia": "00020126360014BR.GOV.BCB.PIX0114+557999950880952040000530398654015.005802BR5912Luccas Elias6008Campinas62120508BichoBet63049AD2",
+        "valor": "R$ 5,00",
+        "currStatus": "Pagamento pendente",
+        "saldo": "R$ 38,41"
+    }
+]

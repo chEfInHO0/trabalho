@@ -1,0 +1,39 @@
+/*====================================================================================================*/
+/*============================_____________________________________________===========================*/
+/*===========================|                                             |===========================*/
+/*===========================|    Considerar usar este arquivo como        |===========================*/
+/*===========================|      estilização global para os botões      |===========================*/
+/*===========================|_____________________________________________|===========================*/
+/*====================================================================================================*/
+@import "./vars.css";
+
+.dashboard {
+  /*.dashboard => Lista não ordenada*/
+  margin-top: 3rem;
+  list-style: none;
+  width: 70%;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 1rem;
+}
+.dashboard li {
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.dashboard li .link,
+.custom-link {
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem;
+  border: 1px solid;
+  border-radius: 3px;
+  color: #c25002;
+  background-color: #55256d;
+  transition: color 0.25s ease, background-color 0.25s ease;
+  &:hover {
+    background-color: #c25002;
+    color: #55256d;
+  }
+}
+/*====================================================================================================*/

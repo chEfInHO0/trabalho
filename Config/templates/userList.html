@@ -1,0 +1,29 @@
+{% extends 'main.html' %}
+{% block content %}
+{% for message in get_flashed_messages() %}
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+    {{message}}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{% endfor %}
+<div class="row d-flex justify-content-center">
+    <div class="col-8 text-center">
+        <table class="table table-striped mt-4">
+            <thead>
+                <th>Nome</th>
+                <th>Email</th>
+            </thead>
+                {% for user in user_db %}
+                <tr>
+                    <td class="client-data">
+                        <div class="client-info">{{user.nome}}</div>
+                    </td>
+                    <td class="client-data">
+                        <div class="client-info">{{user.email}}</div>
+                    </td>
+                </tr>
+                {% endfor %}
+        </table>
+    </div>
+</div>
+{% endblock %}

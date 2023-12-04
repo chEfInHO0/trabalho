@@ -1,0 +1,35 @@
+{% extends 'main.html' %}
+{% block content %}
+{% for message in get_flashed_messages() %}
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+    {{message}}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{% endfor %}
+
+{% if user.id == current_user.id or current_user.is_adm%}
+<div class="row d-flex justify-content-center">
+    <div class="col-4 d-flex justify-content-center">
+        <h1 class="mt-4">Update</h1>
+    </div>
+</div>
+<div class="container-md">
+    <form action="/user/update/{{user.id}}" method="POST" class="form-control mt-3 bb-form" autocomplete="off">
+        {{form.hidden_tag()}}
+        {{form.nome.label(class="form-label")}}
+        {{form.nome(class="form-control", value=user.nome)}}
+        {{form.email.label(class="form-label")}}
+        {{form.email(class="form-control", value=user.email)}}
+        {{form.username.label(class="form-label")}}
+        {{form.username(class="form-control", value=user.username)}}
+        {{form.enviar(class="btn bb-btn mt-3")}}
+        <a class="btn bb-btn-delete mt-3" href="{{url_for('delete',id=user.id)}}">Deletar</a>
+        <a class="btn bb-btn mt-3" href="/user/dashboard">Voltar</a>
+    </form>
+</div>
+{% else %}
+<div class="container-md">
+    <h2>Acesso Negado</h2>
+</div>
+{% endif %}
+{% endblock %}

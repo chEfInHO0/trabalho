@@ -1,0 +1,43 @@
+{% extends 'main.html' %}
+{% block content %}
+{% for message in get_flashed_messages() %}
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+    {{message}}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{% endfor %}
+{% if userA == None %}
+<div class="container-md mb-3 alert-message">
+    <h1>Atenção</h1>
+    <h3>Leia com cuidado os próximos passos</h3>
+    <p>
+        Aqui neste momento será cadastrado a conta de Administador deste site, a partir dela é que poderão ser criados outros administadores,
+        por essa razão <strong>é de extrema importancia que o login e senha sejam armazenados com cautela</strong> uma vez que a perca de algum deles
+        resultara na impossibilidade de cadastrar novos usuários
+    </p>
+</div>
+{% else %}
+<div class="row d-flex justify-content-center">
+    <div class="col-4 d-flex justify-content-center">
+        <h1 class="mt-4">Cadastro de ADM</h1>
+    </div>
+</div>
+{% endif %}
+<div class="container-md">
+    <form method="post" class="form-control mt-3 bb-form" autocomplete="off">
+        {{form.hidden_tag()}}
+        {{form.adm(class="d-none",checked=true)}}
+        {{form.nome.label(class="form-label")}}
+        {{form.nome(class="form-control")}}
+        {{form.email.label(class="form-label")}}
+        {{form.email(class="form-control")}}
+        {{form.username.label(class="form-label")}}
+        {{form.username(class="form-control")}}
+        {{form.senha.label(class="form-label")}}
+        {{form.senha(class="form-control")}}
+        {{form.senha2.label(class="form-label")}}
+        {{form.senha2(class="form-control")}}
+        {{form.enviar(class="btn bb-btn mt-3")}}
+    </form>
+</div>
+{% endblock %}

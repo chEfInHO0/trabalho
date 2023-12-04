@@ -1,0 +1,13 @@
+:root{
+    --corBotao:blue;
+    --corFundo:whitesmoke;
+    --corPrimaria:rgb(48, 48, 96);
+    --corSecondaria:rgb(139, 139, 198);
+    --corTexto:#3c3c3c;
+    --corDestaque:#006fee;
+    --corDestaqueTexto:black;
+    --laranja:#c25002;
+    --fontPrincipal:'Roboto Flex', sans-serif;
+    --fontSecondaria:'Roboto Condensed', sans-serif;
+    --fontTitulo:'Poppins', sans-serif;
+}
